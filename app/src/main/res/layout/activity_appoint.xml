@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+
+        android:id="@+id/rl_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@drawable/selector_textview"
+            android:id="@+id/tv_preday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="&lt; 前一天" />
+
+        <TextView
+            android:background="@drawable/selector_textview"
+            android:id="@+id/tv_nowDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:textColor="@color/green"
+            android:textSize="14dp"
+            android:text="2015年12月8日(今天)" />
+
+        <TextView
+            android:background="@drawable/selector_textview"
+            android:id="@+id/tv_nextday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:text="后一天 &gt;" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_appoint_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_data">
+
+        <TextView
+            android:text="T-time"
+            style="@style/tv_item_appoint"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_zhi_gray"
+            />
+        <TextView
+            android:text="名字/身份"
+            style="@style/tv_item_appoint"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_zhi_gray"
+            />
+
+        <TextView
+            android:text="名字/身份"
+            style="@style/tv_item_appoint"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_zhi_gray"
+            />
+
+        <TextView
+            android:text="名字/身份"
+            style="@style/tv_item_appoint"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_zhi_gray"
+            />
+
+        <TextView
+            android:text="名字/身份"
+            style="@style/tv_item_appoint"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_zhi_gray"
+            />
+
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_appoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_appoint_title"
+        style="@style/listViewNo"
+        >
+
+
+    </ListView>
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout style="@style/main_tab_rb">
+
+        <ImageView
+            android:id="@+id/radio_0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/tab_0_selected" />
+
+        <ImageView
+            android:id="@+id/iv_radio_0"
+            style="@style/backSelect_src"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/main_tab_rb">
+
+        <ImageView
+            android:id="@+id/radio_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/tab_1" />
+
+        <ImageView
+            android:id="@+id/iv_radio_1"
+
+            style="@style/backSelect_src"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/main_tab_rb">
+
+        <ImageView
+            android:id="@+id/radio_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/tab_2" />
+
+
+        <ImageView
+            android:id="@+id/iv_radio_2"
+            style="@style/backSelect_src"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/main_tab_rb">
+
+        <ImageView
+            android:id="@+id/radio_3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+
+            android:src="@drawable/tab_3" />
+
+        <ImageView
+            android:id="@+id/iv_radio_3"
+            style="@style/backSelect_src"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/main_tab_rb">
+
+        <ImageView
+            android:id="@+id/radio_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_centerInParent="true"
+            android:src="@drawable/tab_4" />
+
+        <ImageView
+            android:id="@+id/iv_radio_4"
+
+            style="@style/backSelect_src"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>
+
+

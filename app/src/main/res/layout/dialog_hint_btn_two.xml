@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@android:color/transparent"
+        android:gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/jumppage_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/green"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@id/title"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="温馨提示" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/jumppage_dialog_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/dialog_text_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dip"
+                android:textSize="16dp"
+                android:textColor="@color/text_black" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="12dip"
+            android:paddingLeft="12dip"
+            android:paddingRight="12dip" >
+
+            <Button
+                android:id="@+id/dialog_btn_cancel"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_width="0dip"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_dialog_btn_cancel_default" />
+
+            <Button
+                android:id="@id/dialog_btn_ok"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_width="0dip"
+                android:layout_height="42dp"
+                android:layout_marginLeft="16dip"
+                android:layout_weight="1"
+                android:background="@drawable/ic_dialog_btn_ok_default" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

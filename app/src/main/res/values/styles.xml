@@ -1,0 +1,75 @@
+<resources>
+
+    <!-- Base application theme. -->
+<!--    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar">
+        &lt;!&ndash;<item name="android:windowNoTitle">true</item>&ndash;&gt;
+    </style>-->
+    <style name = "AppTheme" parent = "Base.AppTheme"></style>
+
+    <style name = "Base.AppTheme" parent = "Theme.AppCompat.Light.NoActionBar">
+        <item name = "colorPrimary">@color/colorPrimary</item>
+        <item name = "colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name = "android:windowBackground">@color/window_background</item>
+    </style>
+
+    <style name="tv_leftFragment">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="listViewNo" parent="@android:style/Widget.TextView">
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:state_focused">false</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:divider">@null</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+
+    <style name="listViewHasScrol" parent="@android:style/Widget.TextView">
+        <item name="android:listSelector">@drawable/selector_listview_item</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+
+    <style name="tv_item_appoint" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:background">@drawable/selector_item_appoint</item>
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="myProgressBarStyle" >
+        　　<item name="android:indeterminateDrawable">@drawable/progress_loading</item>
+        　　<item name="android:minWidth">42dip</item>
+        　　<item name="android:maxWidth">42dip</item>
+        　　<item name="android:minHeight">42dip</item>
+        　　<item name="android:maxHeight">42dip</item>
+    </style>
+
+    <!-- maintb的radiobutton -->
+    <style name="main_tab_rb">
+        <item name="android:src">@drawable/button_selector</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:scaleType">center</item>
+    </style>
+</resources>

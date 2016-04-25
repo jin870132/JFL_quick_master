@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <!-- 顶栏 -->
+
+    <include
+        android:id="@+id/rl_title"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!--底栏-->
+    <include
+        android:id="@+id/view_bottom"
+        layout="@layout/layout_main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    <!-- 主内容框架 -->
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/view_bottom"
+        android:layout_below="@id/rl_title" />
+
+    <!--加载状态-->
+    <include
+        layout="@layout/loadingstateview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/view_bottom"
+        android:layout_below="@+id/rl_title" />
+</RelativeLayout>
+

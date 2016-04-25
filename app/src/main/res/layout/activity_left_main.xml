@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_left"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_black">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/tv_leftFragment"
+            android:text="功能"
+            android:textColor="@color/green" />
+
+        <TextView
+            android:id="@+id/tv_appoint"
+            style="@style/tv_leftFragment"
+            android:background="@color/green"
+            android:drawableLeft="@mipmap/icon_appoint"
+            android:text=" 第一页" />
+
+        <TextView
+            android:id="@+id/tv_reportform"
+            style="@style/tv_leftFragment"
+            android:drawableLeft="@mipmap/icon_report"
+            android:text=" 第二页" />
+
+        <TextView
+            android:id="@+id/tv_consumer"
+            style="@style/tv_leftFragment"
+            android:drawableLeft="@mipmap/icon_consumer"
+            android:text=" 第三页" />
+
+        <TextView
+            android:padding="10dp"
+            style="@style/tv_leftFragment"
+            android:text="个人中心"
+            android:textColor="@color/green" />
+
+        <TextView
+            android:id="@+id/tv_modifypwd"
+            style="@style/tv_leftFragment"
+            android:drawableLeft="@mipmap/icon_psd"
+            android:text=" 密码修改" />
+
+        <TextView
+            android:id="@+id/tv_logout"
+            style="@style/tv_leftFragment"
+            android:drawableLeft="@mipmap/icon_logout"
+            android:text=" 注销账号" />
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>
